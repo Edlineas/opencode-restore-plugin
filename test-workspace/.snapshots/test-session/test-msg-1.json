@@ -1,0 +1,13 @@
+{
+  "id": "1770619322609-ia9h4mi21",
+  "messageId": "test-msg-1",
+  "sessionId": "test-session",
+  "timestamp": 1770619322609,
+  "files": {
+    "test.txt": {
+      "content": "Original content",
+      "hash": "91e0a6ee1805c38a55d0a43a38626ce8",
+      "exists": true
+    }
+  }
+}

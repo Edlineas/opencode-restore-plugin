@@ -11,7 +11,7 @@ export class RestoreEngine {
     this.workspaceRoot = workspaceRoot
   }
 
-  async restore(snapshot: Snapshot): Promise<void> {
+  async restore(snapshot: Snapshot, force: boolean = false): Promise<void> {
     const conflicts: string[] = []
 
     for (const [path, state] of Object.entries(snapshot.files)) {
@@ -23,7 +23,7 @@ export class RestoreEngine {
       }
     }
 
-    if (conflicts.length > 0) {
+    if (conflicts.length > 0 && !force) {
       throw new Error(`File conflicts detected: ${conflicts.join(', ')}. Please confirm to overwrite.`)
     }
 
