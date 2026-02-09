@@ -2,8 +2,8 @@
   "name": "opencode-restore-plugin",
   "version": "0.1.0",
   "description": "Restore messages and files for OpenCode AI - similar to Trae/Kiro's restore functionality",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/plugin.js",
+  "types": "dist/plugin.d.ts",
   "files": [
     "dist"
   ],
