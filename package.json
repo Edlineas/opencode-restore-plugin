@@ -1,0 +1,51 @@
+{
+  "name": "opencode-restore-plugin",
+  "version": "0.1.0",
+  "description": "Restore messages and files for OpenCode AI - similar to Trae/Kiro's restore functionality",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "type-check": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "opencode",
+    "plugin",
+    "restore",
+    "undo",
+    "snapshot",
+    "file-recovery"
+  ],
+  "author": "weinuoer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Edlineas/opencode-restore-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Edlineas/opencode-restore-plugin/issues"
+  },
+  "homepage": "https://github.com/Edlineas/opencode-restore-plugin#readme",
+  "peerDependencies": {
+    "@opencode-ai/sdk": ">=1.0.0"
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@opencode-ai/sdk": "^1.0.0",
+    "typescript": "^5.3.3",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.11"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

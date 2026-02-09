@@ -1,0 +1,42 @@
+{
+  "mcpServers": {
+    "Playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@executeautomation/playwright-mcp-server",
+        "--browser",
+        "chromium",
+        "--executable-path",
+        "/Users/macos/Library/Caches/ms-playwright/chromium-1208/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing"
+      ],
+      "env": {
+        "PLAYWRIGHT_BROWSERS_PATH": "/Users/macos/Library/Caches/ms-playwright"
+      },
+      "disabled": false,
+      "autoApprove": [
+        "browser_navigate",
+        "browser_snapshot",
+        "browser_click",
+        "browser_type",
+        "browser_screenshot",
+        "browser_close",
+        "browser_fill_form",
+        "browser_network_requests",
+        "browser_take_screenshot",
+        "browser_evaluate",
+        "browser_file_upload",
+        "browser_handle_dialog",
+        "browser_console_messages",
+        "browser_run_code",
+        "browser_resize",
+        "browser_wait_for",
+        "browser_press_key",
+        "browser_install",
+        "browser_select_option",
+        "browser_hover",
+        "browser_tabs"
+      ]
+    }
+  }
+}
