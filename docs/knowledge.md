@@ -40,4 +40,7 @@
 | npm link 不创建符号链接 | npm link 在某些环境下不工作 | 使用 ln -s 直接创建符号链接 |
 | 恢复时冲突检测过严 | 修改后的文件总是检测为冲突 | 添加 force 参数允许强制恢复 |
 | 测试时快照包含自身 | 快照目录在工作区内 | 测试时使用独立的快照目录 |
+| OpenCode 插件不加载 | 缺少正确的插件入口文件 | 创建 plugin.ts 导出 RestorePlugin 函数 |
+| plugin.ts 编译失败 | tsconfig rootDir 限制 | 移除 rootDir 或将 plugin.ts 加入 include |
+| TypeScript 类型错误 | 插件参数没有类型定义 | 使用 any 类型注解参数 |
 
