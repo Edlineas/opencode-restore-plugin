@@ -1,0 +1,52 @@
+# Trae 忽略文件
+# 类似于 .gitignore，用于指定哪些文件不应该被 Trae 的上下文索引包含
+
+# 依赖目录
+node_modules/
+vendor/
+runtime/
+
+# 构建输出
+.output/
+dist/
+build/
+
+# 缓存文件
+*.log
+*.cache
+.DS_Store
+
+# 临时文件
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# 备份文件
+backup/
+*.bak
+*.backup
+
+# 测试数据
+tests/html-designs/
+tests/frontend/
+
+# 敏感配置
+.env
+.env.local
+*.key
+*.pem
+
+# IDE 配置
+.vscode/
+.idea/
+*.sublime-*
+
+# 系统文件
+Thumbs.db
+.DS_Store
+
+# 大文件
+*.sql.gz
+*.tar.gz
+*.zip
